@@ -1,6 +1,9 @@
-# SDC Homework -- IMU Integrator
+# IMU Dead Reckoning
 
-Given ROS bag with IMU data, integrator the vehicle or human path. 
+Given ROS bag with IMU data, integrator the vehicle or human path.
+Here is a demo video:
+
+[![Demo Video](https://drive.google.com/file/d/1r0dGFB5iiyyESFEeKqCsn3dEpLfnaSJd/view?usp=sharing)](https://drive.google.com/file/d/1Z4PAO3LoPApbf5XNheIb-J3KEl13hMEx/view?usp=sharing)
 
 ## Getting Started
 
@@ -15,8 +18,8 @@ sudo apt-get install libeigen3-dev
 You can download the code from github directly or use command line:
 
 ```
-git pull https://github.com/Abekabe/verdict-crawler.git
-cd verdict-crawler-master
+git pull https://github.com/Abekabe/IMU-Dead-Reckoning.git
+cd IMU-Dead-Reckoning
 catkin_make
 ```
 
@@ -26,7 +29,7 @@ First, you need to run the roscore, play the rosbag with IMU data, then execute 
 ```
 roscore
 rosbag play [your bag]
-rosrun hw3_0410817 hw3_node
+rosrun Imu_Integrator Imu_Integrator_node
 ```
 
 
