@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(hw3_0410817)
+project(Imu_Integrator)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   visualization_msgs
@@ -29,8 +29,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(hw3_node src/hw3_node.cpp)
-target_link_libraries(hw3_node ${catkin_LIBRARIES})
+add_executable(Imu_Integrator_node src/Imu_Integrator.cpp)
+target_link_libraries(Imu_Integrator_node ${catkin_LIBRARIES})
 
 #using EIGEN
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
@@ -39,7 +39,7 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 
 install(
   TARGETS
-    hw3_node
+    Imu_Integrator_node 
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

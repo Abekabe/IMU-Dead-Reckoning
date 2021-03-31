@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>hw3_0410817</name>
+  <name>Imu_Integrator</name>
   <version>0.0.0</version>
-  <description>The hw3_0410817 package</description>
+  <description>The Imu_Integrator package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
