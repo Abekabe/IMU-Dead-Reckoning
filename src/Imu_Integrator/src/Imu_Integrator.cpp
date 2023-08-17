@@ -67,7 +67,7 @@ void ImuIntegrator::calcOrientation(const geometry_msgs::Vector3 &msg) {
   // std::cout << "sigma: " << sigma << std::endl << Eigen::Matrix3d::Identity()
   // + (std::sin(sigma) / sigma) * B << std::endl << pose.orien << std::endl;
   pose.orien = pose.orien *
-               (Eigen::Matrix3d::Identity() + (std::sin(sigma) / sigma) * B -
+               (Eigen::Matrix3d::Identity() + (std::sin(sigma) / sigma) * B +
                 ((1 - std::cos(sigma)) / std::pow(sigma, 2)) * B * B);
 }
 
